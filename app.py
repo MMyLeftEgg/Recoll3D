@@ -108,6 +108,14 @@ def register():
 def home():
     return render_template('index.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/blogs')
+def blogs():
+    return render_template('blogs.html')
+
 @app.route('/login_page')
 def login_page():
     return render_template('dashboard/auth-signin.html')
